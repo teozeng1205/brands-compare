@@ -1,0 +1,102 @@
+carrier	source	outbound_fare_family	ods
+9K	Capeair	Value	5
+AA	AA Points	COACH 	516
+AA	Alaska	MAIN	12
+AA	Alaska Airlines	MAIN	43
+AA	American Airlines	BASIC ECONOMY	1037
+AA	American Airlines	MAIN CABIN	668
+AA	American Airlines	null	6
+AA	Booking	ECONOMY	1
+AA	Expedia	Basic Economy	88
+AA	Expedia	ECONOMY	34
+AA	GDS	MAIN CABIN	1659
+AA	GDS	Unknown	114
+AA	GDS	FIRST	2
+AA	Google Flights	Economy	219
+AA	NDC	Basic Economy	969
+AA	NDC	Main Cabin	676
+AA	SkyScanner	Basic Economy	88
+AA	SkyScanner	Economy	50
+AS	AA Points	COACH 	238
+AS	AA Points	FIRST 	2
+AS	Alaska	SAVER	50
+AS	Alaska	MAIN	4
+AS	Alaska Airlines	SAVER	538
+AS	Alaska Airlines	MAIN	66
+AS	Expedia	BASIC ECONOMY	50
+AS	Expedia	ECONOMY	4
+AS	GDS	SAVER	414
+AS	GDS	PARTNER MAIN	92
+AS	GDS	REFUNDABLE MAIN	30
+AS	GDS	HA PARTNER MAIN	16
+AS	GDS	MAIN	13
+AS	Google Flights	Economy	8
+AS	SkyScanner	Economy	79
+B6	Expedia	BASIC ECONOMY	43
+B6	GDS	BLUE BASIC	249
+B6	GDS	Unknown	5
+B6	JetBlue	BLUE BASIC	282
+B6	JetBlue	BLUE	10
+B6	SkyScanner		44
+DL	Delta Points	Main Basic	213
+DL	Delta Points	Main Classic	17
+DL	Delta Points	Main	12
+DL	Delta via SkyScanner	Basic Economy	76
+DL	Delta via SkyScanner	Economy	18
+DL	Expedia	Basic Economy	76
+DL	Expedia	ECONOMY	18
+DL	GDS	DELTA MAIN BASIC	1197
+DL	GDS	DELTA MAIN	272
+DL	GDS	DELTA MAIN CLASSIC	261
+DL	Google Flights	Economy	225
+DL	SkyScanner	Basic Economy	76
+DL	SkyScanner	Economy	18
+EK	SkyScanner		1
+F9	Booking	ECONOMY	1
+F9	Expedia	ECONOMY	66
+F9	Flyfrontier	STANDARD	66
+F9	Frontier	DISCOUNT	300
+F9	Frontier via SkyScanner		327
+F9	GDS	STANDARD	584
+F9	GDS	ECONOMY	44
+F9	SkyScanner	Economy	66
+G4	Allegiant	standard	441
+G4	Allegiant via SkyScanner		714
+HA	AA Points	COACH 	23
+HA	AA Points	FIRST 	1
+HA	Expedia	BASIC ECONOMY	54
+HA	Expedia	ECONOMY	16
+HA	GDS	MAIN CABIN BASIC	408
+HA	GDS	Main Cabin	16
+HA	GDS	Unknown	6
+HA	GDS	MAIN CABIN	4
+HA	Hawaiian	Main Cabin	11
+HA	Hawaiian	Main Cabin Basic	4
+HA	Hawaiian via SkyScanner		15
+HA	SkyScanner		65
+MX	Breeze Airways via SkyScanner		316
+NK	Booking	ECONOMY	1
+NK	GDS	Unknown	561
+NK	Spirit	Value	285
+NK	Spirit via SkyScanner		315
+SY	GDS	Unknown	109
+SY	SunCountry via SkyScanner		28
+UA	Booking	ECONOMY	1
+UA	Expedia	Basic Economy	159
+UA	GDS	ECONOMY	901
+UA	Google Flights	Economy	167
+UA	SkyScanner	Basic Economy	159
+UA	United Airlines	ECO-BASIC	1286
+UA	United Airlines	ECONOMY	164
+UA	United Airlines	FIRST	2
+UA	United Points	Economy	241
+UA	United via SkyScanner	Basic Economy	159
+VC	Alaska Airlines	MAIN	2
+WN	Southwest	Basic	394
+WN	Southwest	WGA	205
+WN	Southwest	Wanna Get Away Plus	9
+WN	Southwest	PLU	2
+XE	JetBlue	ECONOMY	4
+XE	United Airlines	ECONOMY	2
+XP	Avelo Airlines	ECONOMY	104
+XP	Priceline	Base Fare	51
