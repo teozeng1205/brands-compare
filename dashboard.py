@@ -412,59 +412,30 @@ def lowest_brands_page():
             comparison_df = comparison_df.sort_values(sort_by, ascending=ascending)
     
     # Display the comparison table
-    st.subheader("Lowest Brands Comparison")
+    st.subheader("Lowest Brands Comparison (Only Brands)")
     
-    # Format the dataframe for better display
-    display_df = comparison_df.copy()
-    if 'Teo_Min_Price' in display_df.columns:
-        display_df['Teo_Min_Price'] = display_df['Teo_Min_Price'].apply(
-            lambda x: f"${x:.2f}" if pd.notna(x) else "N/A"
-        )
+    # Select only the requested columns for display
+    display_df = comparison_df[['Airline', 'George_Airline_Brand', 'George_Source_Brand', 'Teo_Basic_Brand']].copy()
     
     st.dataframe(display_df, use_container_width=True)
     
-    # Download button
+    # Download button for the full comparison (optional, but useful if user wants detailed data later)
     csv = comparison_df.to_csv(index=False)
     st.download_button(
-        label="Download Comparison as CSV",
+        label="Download Full Comparison Data as CSV",
         data=csv,
-        file_name="lowest_brands_comparison.csv",
+        file_name="lowest_brands_full_comparison.csv",
         mime="text/csv"
     )
     
-    # Summary insights
-    st.subheader("Key Insights")
+    # Summary insights - simplified
+    st.subheader("Key Insights (Simplified)")
     
-    col1, col2 = st.columns(2)
-    with col1:
-        # Airlines covered by each dataset
-        george_a_coverage = len([x for x in comparison_df['George_Airline_Brand'] if x != 'N/A'])
-        george_s_coverage = len([x for x in comparison_df['George_Source_Brand'] if x != 'N/A'])
-        teo_coverage = len([x for x in comparison_df['Teo_Basic_Brand'] if x not in ['N/A', 'Not Identified']])
-        
-        st.write(f"**Dataset Coverage:**")
-        st.write(f"- George Airline: {george_a_coverage}/{len(comparison_df)} airlines")
-        st.write(f"- George Source: {george_s_coverage}/{len(comparison_df)} airlines")
-        st.write(f"- Teo Analysis: {teo_coverage}/{len(comparison_df)} airlines")
-    
-    with col2:
-        # Brand agreement analysis
-        agreement_count = 0
-        total_comparable = 0
-        
-        for _, row in comparison_df.iterrows():
-            if (row['George_Airline_Brand'] != 'N/A' and 
-                row['George_Source_Brand'] != 'N/A'):
-                total_comparable += 1
-                if (str(row['George_Airline_Brand']).lower() == 
-                    str(row['George_Source_Brand']).lower()):
-                    agreement_count += 1
-        
-        if total_comparable > 0:
-            agreement_rate = (agreement_count / total_comparable) * 100
-            st.write(f"**George Dataset Agreement:**")
-            st.write(f"- {agreement_count}/{total_comparable} airlines have matching brands")
-            st.write(f"- Agreement rate: {agreement_rate:.1f}%")
+    st.markdown("""
+    This simplified view focuses on the identified lowest brands.
+    For detailed metrics (like ODs volume and minimum prices) and dataset coverage,
+    please refer to the full downloadable CSV.
+    """)
 
 def main():
     """Main dashboard function"""
